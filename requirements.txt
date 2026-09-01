@@ -1,16 +1,7 @@
-# Copy this file to ".env" and fill in your real values. Never commit ".env" to source control.
-
-# Anthropic API key — from https://console.anthropic.com/settings/keys
-ANTHROPIC_API_KEY=sk-ant-...
-
-# SQL Server connection details
-SQL_SERVER=SYSTEM\MSSQLTESTDATA
-SQL_DATABASE=CRA2
-SQL_USERNAME=sa
-SQL_PASSWORD=~1q2w3e4r5t
-# Driver name must match what's installed on this machine (check with: odbcinst -q -d  on Mac/Linux, or ODBC Data Sources app on Windows)
-SQL_DRIVER=ODBC Driver 18 for SQL Server
-
-# Optional: comma-separated list of tables/views the agent is allowed to look at.
-# Leave blank to let it discover everything the login can see.
-SQL_ALLOWED_TABLES=
+streamlit==1.38.0
+anthropic==0.34.2
+pandas==2.2.2
+openpyxl==3.1.5
+SQLAlchemy==2.0.32
+pyodbc==5.1.0
+python-dotenv==1.0.1
